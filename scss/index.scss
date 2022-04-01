@@ -752,6 +752,7 @@ h1 {
 .about-sub {
   width: 100%;
   color: black;
+  text-align: justify;
   display: flex;
   padding-bottom: 40px;
   background-color: rgb(238, 238, 238) !important;
@@ -799,6 +800,114 @@ h1 {
   width: 42%;
   font-size: 1.06em;
   margin-bottom: 50px;
+}
+@media screen and (min-width:580px) and (max-width:645px){
+  .main{
+    width: 100%;
+  }
+  .t-card{
+    width: 190px !important;
+    height: 190px !important;
+  }
+  .t-overlay{
+    top: 10px !important;
+    left: 40px !important ;
+  }
+  .t-card p{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media screen and (min-width:449px) and (max-width:580px){
+  .main{
+    width: 100% !important;
+  }
+  .t-card{
+    width: 190px !important;
+    height: 190px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  .t-overlay{
+    top: 10px !important;
+    left: 40px !important ;
+  }
+  .t-card p{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media screen and (min-width:400px) and (max-width:449px){
+  .main{
+    width: 100% !important;
+  }
+  .t-card{
+    width: 170px !important;
+    height: 170px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .t-overlay{
+    top: 15px !important;
+    left: 37px !important ;
+  }
+  .t-card p{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 15px !important;
+  }
+  .t-circle{
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .t-overlay{
+    width: 100px !important;
+    height:100px !important;
+  }
+  .t-circle::after{
+    width: 100px !important;
+    height:100px !important;
+    top: 3px !important;
+    left: 3px !important;
+  }
+}
+@media screen and (max-width:399px){
+  .main{
+    width: 100% !important;
+  }
+  .t-card{
+    width: 145px !important;
+    height: 145px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .t-overlay{
+    top: 15px !important;
+    left: 37px !important ;
+  }
+  .t-card p{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 12px !important;
+  }
+  .t-circle{
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .t-overlay{
+    width: 80px !important;
+    height:80px !important;
+  }
+  .t-circle::after{
+    width: 80px !important;
+    height:80px !important;
+    top: 3px !important;
+    left: 3px !important;
+  }
 }
 @media screen and (min-width: 550px) and (max-width: 1099px) {
   .about-heading {
