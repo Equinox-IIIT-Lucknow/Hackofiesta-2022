@@ -2395,13 +2395,24 @@ section#team-main {
 }
 @media screen and (max-width:800px){
   .team-card {
-    width: 250px !important;
-    height: 250px !important;
+    width: 120px !important;
+    height: 120px !important;
   }
   .team-content{
-    width: 250px !important;
-    height: 125px !important;
+    width: 120px !important;
+    height: 60px !important;
     border-bottom-left-radius: 50%;
+  }
+  .contentBx h3{
+    font-size: 7px !important;
+    margin-bottom: 8px !important;
+    margin-top: 6px !important;
+  }
+  .contentBx h3 span{
+    font-size: 6px !important;
+  }
+  .team-container .team-card .team-content .sci li a {
+    font-size: 12px !important;
   }
 }
 .hack-f{
@@ -2443,6 +2454,14 @@ margin-right: 20px;
 }
 .campus-imgs-sub img{
     filter: grayscale(0.3);
+}
+@media screen and (max-width:400px) {
+  .team-container{
+    margin-bottom: 20px !important;
+
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
 }
 @media screen and (min-width:500px) and (max-width:900px) {
   .campus-imgs-sub{
