@@ -40,6 +40,50 @@
         </filter>
       </defs>
     </svg>
+    <div class="nav-container">
+      <span class="menu-trigger">
+        <i class="menu-trigger-bar top"></i>
+        <i class="menu-trigger-bar middle"></i>
+        <i class="menu-trigger-bar bottom"></i>
+      </span>
+      <span class="close-trigger">
+        <i class="close-trigger-bar left"></i>
+        <i class="close-trigger-bar right"></i>
+      </span> 
+      <div class="inner-container">
+          <i class="menu-bg top"></i>
+          <i class="menu-bg middle"></i>
+          <i class="menu-bg bottom"></i>
+        <nav class="menu-container" id="nav--bar">
+          <ul class="menu">
+            <li>
+              <a class="link--a" href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a class="link--a" href="#theme">THEMES</a>
+            </li>
+            <li>
+              <a class="link--a" href="#prizes">PRIZES</a>
+            </li>
+            <li>
+              <a class="link--a" href="#speakers">SPEAKERS</a>
+            </li>
+            <li>
+              <a class="link--a" href="#faqs">FAQs</a>
+            </li>
+            <li>
+              <a class="link--a" href="#sponsors">SPONSORS</a>
+            </li>
+            <li>
+              <a class="link--a" href="#team">TEAM</a>
+            </li>
+            <li>
+              <a class="link--a" href="#contact">CONTACT US</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <div class="container-h">
       <p class="subtitle" data-aos="fade-left" style="z-index: 1000; position: initial;">3.0</p>
       <div class="glitch" data-text="HackOFiesta" data-aos="fade-down">HackOFiesta</div>
@@ -83,7 +127,7 @@
     </div>
     <div class="about">
       <div class="about-sub">
-        <div class='about-inner'>
+        <div class='about-inner' id="about">
           <div class="about-heading">ABOUT</div>
           <div class="about-content">
             <div class="about-content-sub">
@@ -112,7 +156,7 @@
             margin-bottom: 20px;
             color: white;
             border-bottom: 3px solid white;
-          ">
+          " id="theme">
           THEME
         </div>
         <section class="main">
@@ -206,7 +250,7 @@
         </button>
       </div>
       <div class="prizes-main">
-        <div class="Prizes-heading" style="background-color:transparent;width:100%;border-bottom:0px;">
+        <div class="Prizes-heading" style="background-color:transparent;width:100%;border-bottom:0px;" id="prizes">
           <span
             style="border-bottom:3px solid white;letter-spacing:0.3rem;font-size: 4rem;" data-glitch2='PRIZES' class="glitch2 pri-fs">PRIZES</span>
         </div>
@@ -397,7 +441,7 @@
         </div>
       </div>
       <div style="width: 100%; display: flex; justify-content: center;align-items: center;flex-direction: column;background-image: url(./images/78255-background-looping-animation.gif); background-position:center;">
-      <div class="Prizes-heading glitch2" data-glitch2='PAST SPEAKERS' style="color: white">PAST SPEAKERS</div>
+      <div class="Prizes-heading glitch2" data-glitch2='PAST SPEAKERS' style="color: white" id="speakers">PAST SPEAKERS</div>
       <div class="speakers-card-main" style="margin-bottom: 50px;width:80%;justify-content:center;">
         <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
           <div class="user-img">
@@ -539,7 +583,7 @@
       </div>
       <!-- FAQ -->
       <div class="faq-main" style="background-image: url(./images/47061-shapes-background.gif);">
-        <div class="container-faq">
+        <div class="container-faq" id="faqs">
           <div class="faq-animation">
             <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_1phqfxry.json"  background="transparent" loop speed="1"  autoplay style="width: 200px; height: 200px;"></lottie-player>
           </div>
@@ -893,7 +937,7 @@
         SPONSORSHIP BROCHURE
       </button>
       <!-- Team section  -->
-      <div class="team">
+      <div class="team" id="team">
         <div class="sponsor__heading">
           <h1 class="heading-secondary heading-secondary--white glitch2" style='font-size: 4em;'>Team</h1>
         </div>
@@ -1314,7 +1358,7 @@
         </section>
       </div>
       <!-- Site footer -->
-      <footer class="site-footer">
+      <footer class="site-footer" id="contact">
         <div class="container-f">
           <div class="hack-f">
             HackOFiesta <span style="font-family:fleisch;font-size: 15px;color: white;">3.0</span>
