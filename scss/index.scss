@@ -27,7 +27,7 @@ body {
 .container-h {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 37%;
+  top: 34%;
   overflow: hidden;
   left: 50%;
 }
@@ -513,7 +513,7 @@ body {
 
 .body-section {
   position: absolute;
-  top: 57%;
+  top: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -572,6 +572,7 @@ body {
   display: flex;
   justify-content: right;
   align-items: right;
+  top: 85vh;
 }
 .icon {
   padding: 20px;
@@ -3352,7 +3353,7 @@ box-shadow: 0px 9px 13px 0px $black-30;
     transform: rotate(-45deg) scaleY(0);
   }
   &.top {
-    left: -26vh;
+    left: -19vh;
     top: -30vh;
   transform: rotate(-45deg) translateY(-152%);
     //top: -25%;
@@ -3367,6 +3368,130 @@ box-shadow: 0px 9px 13px 0px $black-30;
 
 @media screen and (min-width:600px){
   .nav-container{
+    display: none;
+  }
+}
+
+.nav2-container{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.nav {
+  background: #fff;
+  padding: 20px 29px;
+  display: flex;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  position: fixed;
+  top: 0px;
+  z-index: 10000;
+}
+
+.nav__active-indicator {
+  position: absolute;
+  top: 50%;
+  margin-left: calc(
+    29px - 12px
+  );
+  left: 0;
+  transform: translateY(-50%);
+  width: calc(
+    120px + 24px
+  );
+  height: calc(100% - 20px);
+  background: #000;
+  z-index: 10;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav__item {
+  margin-left: 32px;
+  position: relative;
+  z-index: 20;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__item button {
+  padding: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 26px;
+  transition: width 0.3s cubic-bezier(0.215, 0.61, 0.355, 1); 
+  outline: none;
+  position: relative;
+  background: transparent;
+}
+
+.active {
+  width: 120px !important;
+}
+
+.icon2{
+  display: block;
+  margin-right: 9px;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+}
+
+.icon2 path {
+  fill: #a6adb1;
+  transition: fill 0.2s;
+}
+
+.active .icon2 path {
+  fill: white;
+}
+
+.text {
+  display: block;
+  color: white;
+  pointer-events: none;
+  font-size: 0;
+}
+
+.text:after {
+  content: attr(data-title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(120px);
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  padding-left: calc(26px + 9px);
+  transition: opacity 0s;
+}
+
+.slide-right .text:after {
+  left: 0;
+  right: auto;
+}
+.slide-left .text:after {
+  right: 0;
+  left: auto;
+}
+
+.active .text:after {
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+@media screen and (max-width:600px){
+  .nav{
     display: none;
   }
 }

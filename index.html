@@ -11,17 +11,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HN6QQW6NCN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN6QQW6NCN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-HN6QQW6NCN');
-</script>
+    gtag('config', 'G-HN6QQW6NCN');
+  </script>
 </head>
 
 <body>
@@ -46,14 +47,14 @@
         <i class="menu-trigger-bar middle"></i>
         <i class="menu-trigger-bar bottom"></i>
       </span>
-      <span class="close-trigger">
+      <span class="close-trigger" id="close-nav">
         <i class="close-trigger-bar left"></i>
         <i class="close-trigger-bar right"></i>
-      </span> 
+      </span>
       <div class="inner-container">
-          <i class="menu-bg top"></i>
-          <i class="menu-bg middle"></i>
-          <i class="menu-bg bottom"></i>
+        <i class="menu-bg top"></i>
+        <i class="menu-bg middle"></i>
+        <i class="menu-bg bottom"></i>
         <nav class="menu-container" id="nav--bar">
           <ul class="menu">
             <li>
@@ -84,12 +85,105 @@
         </nav>
       </div>
     </div>
-    <div class="container-h">
+    <div class="nav" id="nav">
+
+      <div class="nav__item">
+        <button class="active nav-btn">
+          <svg class="icon2" goto="#home" viewBox="0 0 24 24">
+            <path class="icon2" goto="#home" fill="#000000" d="M9,13H15V19H18V10L12,5.5L6,10V19H9V13M4,21V9L12,3L20,9V21H4Z" />
+          </svg>
+          <span class="text" data-title="Home">Home</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#about" viewBox="0 0 24 24">
+            <path class="icon2" goto="#about" fill="#000000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
+          </svg>
+          <span class="text" data-title="About">About</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#theme" viewBox="0 0 24 24">
+            <path class="icon2" goto="#theme" fill="#000000"
+              d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z" />
+          </svg>
+          <span class="text" data-title="Themes">Themes</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#prizes" viewBox="0 0 24 24">
+            <path class="icon2" goto="#prizes" fill="#000000"
+              d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
+          </svg>
+          <span class="text" data-title="Prizes">Prizes</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#speakers" viewBox="0 0 24 24">
+            <path class="icon2" goto="#speakers" fill="#000000"
+              d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
+          </svg>
+          <span class="text" data-title="Speakers">Speakers</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#faqs" viewBox="0 0 24 24">
+            <path class="icon2" goto="#faqs" fill="#000000"
+              d="M12,18.54L19.37,12.8L21,14.07L12,21.07L3,14.07L4.62,12.81L12,18.54M12,16L3,9L12,2L21,9L12,16M12,4.53L6.26,9L12,13.47L17.74,9L12,4.53Z" />
+          </svg>
+          <span class="text" data-title="FAQs">FAQs</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#sponsors" viewBox="0 0 24 24">
+            <path class="icon2" goto="#sponsors" fill="#000000"
+              d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" />
+          </svg>
+          <span class="text" data-title="Sponsors">Sponsors</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#team" viewBox="0 0 24 24">
+            <path class="icon2" goto="#team" fill="#000000"
+              d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" />
+          </svg>
+          <span class="text" data-title="Team">Team</span>
+        </button>
+      </div>
+
+      <div class="nav__item">
+        <button class="nav-btn">
+          <svg class="icon2" goto="#contact" viewBox="0 0 24 24">
+            <path class="icon2" goto="#contact" fill="#000000"
+              d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" />
+          </svg>
+          <span class="text" data-title="Contact">Contact</span>
+        </button>
+      </div>
+
+      <div class="nav__active-indicator"></div>
+
+    </div>
+    <div class="container-h" id="home">
       <p class="subtitle" data-aos="fade-left" style="z-index: 1000; position: initial;">3.0</p>
       <div class="glitch" data-text="HackOFiesta" data-aos="fade-down">HackOFiesta</div>
       <div class="glow">HackOFiesta</div>
     </div>
-    
+
     <div class="body-section">
       <div class="date">22nd - 24th April, 2022</div>
       <div class="half dark">
@@ -146,7 +240,8 @@
               truly endless.
             </div>
             <div class="ab-img" data-aos="zoom-in" id="abt-img" data-aos-anchor-placement="top-bottom">
-              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_eng2ayfu.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_eng2ayfu.json" background="transparent"
+                speed="1" loop autoplay></lottie-player>
             </div>
           </div>
         </div>
@@ -170,57 +265,64 @@
               </div>
             </div>
           </div> -->
-        <a class="t-card education">
-            <div class="t-overlay">   
+          <a class="t-card education">
+            <div class="t-overlay">
             </div>
-         <div class="t-circle">
-          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ly5yxejz.json"  background="transparent"  speed="1"  style="width: 97%; height: auto;z-index: 120;"  loop autoplay></lottie-player> 
-        </div>
-         <p>GAME DEVELOPMENT</p>
-        </a>
-        <a class="t-card credentialing">
+            <div class="t-circle">
+              <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ly5yxejz.json" background="transparent"
+                speed="1" style="width: 97%; height: auto;z-index: 120;" loop autoplay></lottie-player>
+            </div>
+            <p>GAME DEVELOPMENT</p>
+          </a>
+          <a class="t-card credentialing">
             <div class="t-overlay"></div>
-         <div class="t-circle">
-          <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_g1pduE.json"  background="transparent"  speed="1"  style="width: 97%; height: auto;z-index: 123;"  loop autoplay></lottie-player>
-         </div>
-         <p>AI & ML</p>
-        </a>
-        <a class="t-card wallet">
+            <div class="t-circle">
+              <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_g1pduE.json" background="transparent"
+                speed="1" style="width: 97%; height: auto;z-index: 123;" loop autoplay></lottie-player>
+            </div>
+            <p>AI & ML</p>
+          </a>
+          <a class="t-card wallet">
             <div class="t-overlay"></div>
-         <div class="t-circle">
-          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ervn0f7j.json"  background="transparent"  speed="1"  style="width:90%; height:auto;z-index: 125;"  loop autoplay></lottie-player>
-         </div>
-         <p>CLOUD COMPUTING</p>
-        </a>
-        <a class="t-card human-resources">
+            <div class="t-circle">
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ervn0f7j.json" background="transparent"
+                speed="1" style="width:90%; height:auto;z-index: 125;" loop autoplay></lottie-player>
+            </div>
+            <p>CLOUD COMPUTING</p>
+          </a>
+          <a class="t-card human-resources">
             <div class="t-overlay"></div>
-         <div class="t-circle">
-          <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_xqbchnql.json"  background="transparent"  speed="1"  style="width: 80%; height: auto; z-index: 130;"  loop autoplay></lottie-player>
-          <!-- <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3qbmscbe.json"  background="transparent"  speed="1"  style="width: 98%; height: auto;z-index:130;"  loop autoplay></lottie-player> -->
-         </div>
-         <p>BLOCK CHAIN</p>
-        </a>
-        <a class="t-card education">
-          <div class="t-overlay"></div>
-       <div class="t-circle">
-        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hzfmxrr7.json"  background="transparent"  speed="1"  style="width: 85%; height: auto; z-index: 150;"  loop autoplay></lottie-player>
-       </div>
-       <p>EDUCATION</p>
-      </a>
-      <a class="t-card credentialing">
-          <div class="t-overlay"></div>
-       <div class="t-circle">
-        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ginda0jy.json"  background="transparent"  speed="1"  style="width: 100%; height: auto; z-index: 150;"  loop autoplay></lottie-player>
-       </div>
-       <p>HEALTH CARE</p>
-      </a>
-      <a class="t-card wallet">
-        <div class="t-overlay"></div>
-     <div class="t-circle">
-      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_r24iinkc.json"  background="transparent"  speed="1"  style="width: 85%; height: auto; z-index: 150;"  loop autoplay></lottie-player>
-     </div>
-     <p>INNOVATION</p>
-    </a>
+            <div class="t-circle">
+              <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_xqbchnql.json" background="transparent"
+                speed="1" style="width: 80%; height: auto; z-index: 130;" loop autoplay></lottie-player>
+              <!-- <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3qbmscbe.json"  background="transparent"  speed="1"  style="width: 98%; height: auto;z-index:130;"  loop autoplay></lottie-player> -->
+            </div>
+            <p>BLOCK CHAIN</p>
+          </a>
+          <a class="t-card education">
+            <div class="t-overlay"></div>
+            <div class="t-circle">
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_hzfmxrr7.json" background="transparent"
+                speed="1" style="width: 85%; height: auto; z-index: 150;" loop autoplay></lottie-player>
+            </div>
+            <p>EDUCATION</p>
+          </a>
+          <a class="t-card credentialing">
+            <div class="t-overlay"></div>
+            <div class="t-circle">
+              <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ginda0jy.json" background="transparent"
+                speed="1" style="width: 100%; height: auto; z-index: 150;" loop autoplay></lottie-player>
+            </div>
+            <p>HEALTH CARE</p>
+          </a>
+          <a class="t-card wallet">
+            <div class="t-overlay"></div>
+            <div class="t-circle">
+              <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_r24iinkc.json" background="transparent"
+                speed="1" style="width: 85%; height: auto; z-index: 150;" loop autoplay></lottie-player>
+            </div>
+            <p>INNOVATION</p>
+          </a>
         </section>
         <button data-aos="fade-up" data-aos-anchor-placement="top-bottom"
           class="btn-clear btn-light btn-glitch theme-btn" style="
@@ -251,8 +353,8 @@
       </div>
       <div class="prizes-main">
         <div class="Prizes-heading" style="background-color:transparent;width:100%;border-bottom:0px;" id="prizes">
-          <span
-            style="border-bottom:3px solid white;letter-spacing:0.3rem;font-size: 4rem;" data-glitch2='PRIZES' class="glitch2 pri-fs">PRIZES</span>
+          <span style="border-bottom:3px solid white;letter-spacing:0.3rem;font-size: 4rem;" data-glitch2='PRIZES'
+            class="glitch2 pri-fs">PRIZES</span>
         </div>
         <div class="prize-cards">
           <!-- <div class="conteneur" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -433,181 +535,188 @@
                 <li>Second prize - 7500 INR</li>
                 <li>Goodies and merch for all people with valid submissions</li>
               </ul>
-              <button class="btn-clear btn-light btn-glitch theme-btn"><a
-                  href="https://docs.koii.network/">See
+              <button class="btn-clear btn-light btn-glitch theme-btn"><a href="https://docs.koii.network/">See
                   More</a></button>
             </div>
           </div>
         </div>
       </div>
-      <div style="width: 100%; display: flex; justify-content: center;align-items: center;flex-direction: column;background-image: url(./images/78255-background-looping-animation.gif); background-position:center;">
-      <div class="Prizes-heading glitch2" data-glitch2='PAST SPEAKERS' style="color: white" id="speakers">PAST SPEAKERS</div>
-      <div class="speakers-card-main" style="margin-bottom: 50px;width:80%;justify-content:center;">
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/Logan.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Logan Kilpatrick</h1>
-            <div class="speaker-content">Julia Language Community Manager</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/logankilpatrick/">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
+      <div
+        style="width: 100%; display: flex; justify-content: center;align-items: center;flex-direction: column;background-image: url(./images/78255-background-looping-animation.gif); background-position:center;">
+        <div class="Prizes-heading glitch2" data-glitch2='PAST SPEAKERS'
+          style="color: white;background-color: transparent;" id="speakers">PAST
+          SPEAKERS</div>
+        <div class="speakers-card-main" style="margin-bottom: 50px;width:80%;justify-content:center;">
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/Logan.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Logan Kilpatrick</h1>
+              <div class="speaker-content">Julia Language Community Manager</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/logankilpatrick/">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
 
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/ganesh.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Ganesh Swami</h1>
+              <div class="speaker-content">CEO At Covalent</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/ganswami/?originalSubdomain=ca">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/harish.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Harish Raisinghani</h1>
+              <div class="speaker-content">Developer Relations Manager At Covalent</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/harish-raisinghani-yvr/?originalSubdomain=ca">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/sarfaraz.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Sarfaraz Hussain</h1>
+              <div class="speaker-content">Data Engineer</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/sarfaraz-hussain-8123b4132/?originalSubdomain=in">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/vilva.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Vilva Athiban</h1>
+              <div class="speaker-content">Senior Engineer At Omio</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/vilvaathiban/">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/ben.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Ben Dechrai</h1>
+              <div class="speaker-content">Community And Developer Advocate</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/bendechrai/?originalSubdomain=au">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/mario.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Mario Behling</h1>
+              <div class="speaker-content">Co-Founder Of FOSSASIA</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/mariobehling/?originalSubdomain=de">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+          <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
+            <div class="user-img">
+              <img src="./images/betina.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="stat">
+              <h1 class="speaker-name">
+                Betina Simeonova</h1>
+              <div class="speaker-content">Transformation And Change Management</div>
+              <div class="speaker-handle">
+                <a href="https://www.linkedin.com/in/betinasimeonova/?originalSubdomain=uk">
+                  <i class="fab fa-linkedin"
+                    style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
+                </a>
+
+              </div>
             </div>
           </div>
         </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/ganesh.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Ganesh Swami</h1>
-            <div class="speaker-content">CEO At Covalent</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/ganswami/?originalSubdomain=ca">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/harish.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Harish Raisinghani</h1>
-            <div class="speaker-content">Developer Relations Manager At Covalent</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/harish-raisinghani-yvr/?originalSubdomain=ca">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/sarfaraz.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Sarfaraz Hussain</h1>
-            <div class="speaker-content">Data Engineer</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/sarfaraz-hussain-8123b4132/?originalSubdomain=in">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/vilva.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Vilva Athiban</h1>
-            <div class="speaker-content">Senior Engineer At Omio</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/vilvaathiban/">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/ben.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Ben Dechrai</h1>
-            <div class="speaker-content">Community And Developer Advocate</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/bendechrai/?originalSubdomain=au">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/mario.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Mario Behling</h1>
-            <div class="speaker-content">Co-Founder Of FOSSASIA</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/mariobehling/?originalSubdomain=de">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
-          <div class="user-img">
-            <img src="./images/betina.jpg" style="border-radius: 50%; height: auto; width: 80%;">
-          </div>
-          <div class="stat">
-            <h1 class="speaker-name">
-              Betina Simeonova</h1>
-            <div class="speaker-content">Transformation And Change Management</div>
-            <div class="speaker-handle">
-              <a href="https://www.linkedin.com/in/betinasimeonova/?originalSubdomain=uk">
-                <i class="fab fa-linkedin"
-                  style="font-size: 20px;background-color:white;padding:5px;color:black;border-radius:2px;"></i>
-              </a>
-
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
       <!-- FAQ -->
       <div class="faq-main" style="background-image: url(./images/47061-shapes-background.gif);">
         <div class="container-faq" id="faqs">
           <div class="faq-animation">
-            <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_1phqfxry.json"  background="transparent" loop speed="1"  autoplay style="width: 200px; height: 200px;"></lottie-player>
+            <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_1phqfxry.json"
+              background="transparent" loop speed="1" autoplay style="width: 200px; height: 200px;"></lottie-player>
           </div>
-          <div class="Prizes-heading faq-h" style="background-color:transparent;width:100%;border-bottom:0px;font-size: 2em;">
+          <div class="Prizes-heading faq-h"
+            style="background-color:transparent;width:100%;border-bottom:0px;font-size: 2em;">
             <span style="border-bottom:3px solid black;letter-spacing:0.3rem;line-height: 1.2;">Frequently Asked
               Questions</span>
           </div>
           <div class="accordion">
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What can be the team
+              <button class="acc-btn" id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What
+                  can be the team
                   size?</span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <p>A team can consist of 1 to 5 members.</p>
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Are there any
+              <button class="acc-btn" id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Are
+                  there any
                   registration charges?</span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <p>Nope! None at all.</p>
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Who can
+              <button class="acc-btn" id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Who
+                  can
                   attend?</span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <p>Anyone with a passion for learning and innovation, or primarily, undergraduate and high school
@@ -616,7 +725,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is there a provision
+              <button class="acc-btn" id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Is
+                  there a provision
                   of a partial selection of members of the team?</span><span class="icon-faq"
                   aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -625,7 +735,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What if I don't know
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What
+                  if I don't know
                   how to code?</span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <p>That is not a problem! A great way to learn how to code is by attending a hackathon. You never know
@@ -635,7 +746,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What can I
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What
+                  can I
                   build?</span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <p>Possibly something that resonates with the theme of the event. It can be a website, software, an
@@ -644,7 +756,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I start working on
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I
+                  start working on
                   my hack before the event?</span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
                 <p>No. In the interest of fairness, students should not be working on their projects before Hackofiesta
@@ -653,7 +766,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What are the
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What
+                  are the
                   challenges to be solved by the Projects?</span><span class="icon-faq"
                   aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -661,7 +775,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What if I don't want
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What
+                  if I don't want
                   to present my hack?
                 </span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -671,7 +786,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Are there any
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Are
+                  there any
                   sponsored challenges and API prizes?
                 </span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -681,7 +797,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What if I have more
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What
+                  if I have more
                   queries?
                 </span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -689,7 +806,8 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I be a mentor or
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I
+                  be a mentor or
                   speaker at the event?
                 </span><span class="icon-faq" aria-hidden="true"></span></button>
               <div class="accordion-content">
@@ -698,9 +816,10 @@
               </div>
             </div>
             <div class="accordion-item" data-aos="fade-up">
-              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><a href="https://devfolio.co/code-of-conduct"
-                  style="text-decoration: none; color: black;" class="dev-coc" target="_blank"><span
-                    class="accordion-title">Devfolio Code of Conduct <i class="fa fa-external-link" aria-hidden="true"
+              <button class="acc-btn" id="accordion-button-5" aria-expanded="false"><a
+                  href="https://devfolio.co/code-of-conduct" style="text-decoration: none; color: black;"
+                  class="dev-coc" target="_blank"><span class="accordion-title">Devfolio Code of Conduct <i
+                      class="fa fa-external-link" aria-hidden="true"
                       style="margin-left:10px;position:relative;top:2px;"></i></span></a></button>
             </div>
           </div>
@@ -756,7 +875,7 @@
         <div class="sponsor__row">
           <a href="https://koii.network" target="_blank" data-aos="zoom-in">
             <div class="sponsor__card">
-              <img src="./img/sponsor/Koii Logo blue.png"  class="koiii" style="height:90px;width: 90px;" alt="">
+              <img src="./img/sponsor/Koii Logo blue.png" class="koiii" style="height:90px;width: 90px;" alt="">
             </div>
           </a>
         </div>
@@ -785,12 +904,63 @@
               <img src="./img/sponsor/xyz-logo-color.png" alt="" style="width: 150px;">
             </div>
           </a>
+          <a href="https://www.voiceflow.com/" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img src="https://global-uploads.webflow.com/5bddf05642686caf6d17eb58/5fd6310ed7b9bff78616bd45_logo.svg"
+                alt="">
+            </div>
+          </a>
+          <a href="https://terminus.com/" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img src="./img/sponsor/termius.png" alt="">
+            </div>
+          </a>
         </div>
         <h2 class="tier-heading"> Youth Community Partner</h2>
         <div class="sponsor__row">
           <a href="https://www.theeducationtree.com/" target="_blank" data-aos="zoom-in">
             <div class="sponsor__card">
               <img src="./img/sponsor/TET logo black.png" style="width:45%;height:auto;align-self:center;" alt="">
+            </div>
+          </a>
+        </div>
+        <h2 class="tier-heading">BlOGGING OUTREACH PARTNER</h2>
+        <div class="sponsor__row">
+          <a href="https://www.blogadda.com/" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img src="./img/sponsor/blogadda.png" style="width:45%;height:auto;align-self:center;" alt="">
+            </div>
+          </a>
+        </div>
+        <h2 class="tier-heading">Outreach Partner</h2>
+        <div class="sponsor__row">
+          <a href="https://hoverrobotix.com/" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img src="https://hoverrobotix.com/wp-content/uploads/2019/11/logo.png"
+                style="width:45%;height:auto;align-self:center;" alt="">
+            </div>
+          </a>
+          <a href="https://thementorx.com/" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img
+                src="https://thementorx.com/wp-content/uploads/2020/02/cropped-MENTORx-logo-black-with-white-tag-line-Round-small-2.png"
+                style="width:25%;height:auto;align-self:center;" alt="">
+            </div>
+          </a>
+        </div>
+        <h2 class="tier-heading">Certificate Partner</h2>
+        <div class="sponsor__row">
+          <a href="" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img src="" style="width:45%;height:auto;align-self:center;" alt="">
+            </div>
+          </a>
+        </div>
+        <h2 class="tier-heading">Media Partner</h2>
+        <div class="sponsor__row">
+          <a href="" target="_blank" data-aos="zoom-in">
+            <div class="sponsor__card">
+              <img src="" style="width:45%;height:auto;align-self:center;" alt="">
             </div>
           </a>
         </div>
@@ -959,8 +1129,8 @@
                   <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
                 </li> -->
                   <li style="--i: 3">
-                    <a href="https://www.linkedin.com/in/divy-khare-63a398172/" target="_blank"><i class="fa fa-linkedin"
-                        aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/divy-khare-63a398172/" target="_blank"><i
+                        class="fa fa-linkedin" aria-hidden="true"></i></a>
                   </li>
                 </ul>
               </div>
@@ -1354,7 +1524,7 @@
               </div>
             </div>
           </div>
-          
+
         </section>
       </div>
       <!-- Site footer -->
@@ -1439,9 +1609,9 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="./script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  
+
   <script>
     AOS.init({
       duration: 1000,
@@ -1450,4 +1620,3 @@
 </body>
 
 </html>
-

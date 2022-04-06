@@ -434,7 +434,6 @@ function toggleAccordion() {
 }
 
 btnitems.forEach((item) => {
-  console.log(item);
   item.addEventListener('click', toggleAccordion)
 });
 
@@ -588,6 +587,43 @@ document.getElementById('nav--bar').addEventListener('click', function (e) {
   const target = e.target;
   if (target.classList.contains('link--a')) {
       const id = target.getAttribute('href').slice(1);
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
+const nav = document.querySelector(".nav");
+const navActiveIndicator = document.querySelector(".nav__active-indicator");
+const buttons = document.querySelectorAll(".nav-btn");
+let activeButton = document.querySelector(".active");
+
+setIndexKey(buttons);
+
+buttons.forEach(button => {
+  button.addEventListener("click", buttonClick);
+});
+
+function setIndexKey(arrayOfElements) {
+  arrayOfElements.forEach((element, index) => {
+    element.index = index;
+  });
+}
+
+function buttonClick() {
+  nav.classList.remove("slide-left");
+  nav.classList.add("slide-right");
+  navActiveIndicator.style.transform = `translateX(${58*this.index}px) translateY(-50%)`;
+
+  // Update the active button
+  if (activeButton) activeButton.classList.remove("active");
+  this.classList.add("active");
+  activeButton = this;
+}
+
+document.getElementById('nav').addEventListener('click', function (e) {
+  e.preventDefault(); 
+  const target = e.target;
+  if (target.classList.contains('icon2')) {
+      const id = target.getAttribute('goto').slice(1);
       document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
