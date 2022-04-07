@@ -3385,10 +3385,11 @@ box-shadow: 0px 9px 13px 0px $black-30;
   padding: 20px 29px;
   display: flex;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
+  border-radius: 35px;
   position: fixed;
   top: 0px;
   z-index: 10000;
+  margin-top: 10px;
 }
 
 .nav__active-indicator {
@@ -3406,6 +3407,7 @@ box-shadow: 0px 9px 13px 0px $black-30;
   background: #000;
   z-index: 10;
   transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 34px;
 }
 
 .nav__item {
