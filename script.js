@@ -627,3 +627,9 @@ document.getElementById('nav').addEventListener('click', function (e) {
       document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+var loader=document.getElementById("preloader");
+
+setTimeout(()=>{
+    loader.style.display="none";
+},10000);
