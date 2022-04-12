@@ -171,8 +171,8 @@
 
       <div class="nav__item">
         <button class="nav-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" goto="#speakers" width="16" height="16" fill="currentColor" class="bi bi-people-fill icon2" viewBox="0 0 17 17"> 
-            <path class="icon2" goto="#speakers" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" goto="#team" width="16" height="16" fill="currentColor" class="bi bi-people-fill icon2" viewBox="0 0 17 17"> 
+            <path class="icon2" goto="#team" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             <path fill-rule="evenodd" class="icon2" goto="#speakers" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
             <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
           </svg>
@@ -196,7 +196,8 @@
       <div class="nav__active-indicator"></div>
 
     </div>
-    <div class="container-h" id="home">
+    <div id="home"></div>
+    <div class="container-h" >
       <p class="subtitle" data-aos="fade-left" style="z-index: 1000; position: initial;">3.0</p>
       <div class="glitch" data-text="HackOFiesta" data-aos="fade-down">HackOFiesta</div>
       <div class="glow">HackOFiesta</div>
@@ -238,8 +239,10 @@
       <i class="fa fa-linkedin fa-2x icon" style="margin-right: 10px" onclick="linkedin()"></i>
     </div>
     <div class="about">
+      <div style="padding-bottom: 25px;" id="about"></div>
       <div class="about-sub">
-        <div class='about-inner' id="about">
+        
+        <div class='about-inner'>
           <div class="about-heading">ABOUT</div>
           <div class="about-content">
             <div class="about-content-sub">
@@ -265,11 +268,12 @@
         </div>
       </div>
       <div class="theme-sub" style="background-color: black">
+        <div style="padding-bottom: 25px;" id="theme"></div>
         <div class="theme-heading glitch2" data-glitch2="THEME" style="
             margin-bottom: 20px;
             color: white;
             border-bottom: 3px solid white;
-          " id="theme">
+          ">
           THEME
         </div>
         <section class="main">
@@ -370,7 +374,8 @@
         </button>
       </div>
       <div class="prizes-main">
-        <div class="Prizes-heading" style="background-color:transparent;width:100%;border-bottom:0px;" id="prizes">
+        <div style="padding-bottom: 25px;" id="prizes"></div>
+        <div class="Prizes-heading" style="background-color:transparent;width:100%;border-bottom:0px;" >
           <span style="border-bottom:3px solid white;letter-spacing:0.3rem;font-size: 4rem;" data-glitch2='PRIZES'
             class="glitch2 pri-fs">PRIZES</span>
         </div>
@@ -561,8 +566,9 @@
       </div>
       <div
         style="width: 100%; display: flex; justify-content: center;align-items: center;flex-direction: column;background-image: url(./images/78255-background-looping-animation.gif); background-position:center;">
+        <div style="padding-bottom: 25px;" id="speakers"></div>
         <div class="Prizes-heading glitch2" data-glitch2='PAST SPEAKERS'
-          style="color: white;background-color: transparent;" id="speakers">PAST
+          style="color: white;background-color: transparent;" >PAST
           SPEAKERS</div>
         <div class="speakers-card-main" style="margin-bottom: 50px;width:80%;justify-content:center;">
           <div class="card-speaker" style="margin-left: 25px;margin-right:25px;" data-aos="fade-up">
@@ -705,11 +711,13 @@
       </div>
       <!-- FAQ -->
       <div class="faq-main" style="background-image: url(./images/47061-shapes-background.gif);">
-        <div class="container-faq" id="faqs">
+        <div style="padding-bottom: 25px;" id="faqs"></div>
+        <div class="container-faq" >
           <div class="faq-animation">
             <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_1phqfxry.json"
               background="transparent" loop speed="1" autoplay style="width: 200px; height: 200px;"></lottie-player>
           </div>
+          
           <div class="Prizes-heading faq-h"
             style="background-color:transparent;width:100%;border-bottom:0px;font-size: 2em;">
             <span style="border-bottom:3px solid black;letter-spacing:0.3rem;line-height: 1.2;">Frequently Asked
@@ -844,7 +852,8 @@
         </div>
       </div>
       <!-- Sponsers section -->
-      <section class="sponsor--section" id="sponsers">
+      <div style="padding-bottom: 25px;" id="sponsers"></div>
+      <section class="sponsor--section" >
         <!-- <div class="scanlines"></div> -->
         <div class="sponsor__heading">
           <h1 class="heading-secondary heading-secondary--white glitch2" style='font-size: 4em;'
@@ -1125,7 +1134,8 @@
         SPONSORSHIP BROCHURE
       </button>
       <!-- Team section  -->
-      <div class="team" id="team">
+      <div style="padding-bottom: 35px;" id="team"></div>
+      <div class="team" >
         <div class="sponsor__heading">
           <h1 class="heading-secondary heading-secondary--white glitch2" style='font-size: 4em;'>Team</h1>
         </div>
@@ -1546,7 +1556,8 @@
         </section>
       </div>
       <!-- Site footer -->
-      <footer class="site-footer" id="contact">
+      <div style="padding-bottom: 25px;" id="contact"></div>
+      <footer class="site-footer">
         <div class="container-f">
           <div class="hack-f">
             HackOFiesta <span style="font-family:fleisch;font-size: 15px;color: white;">3.0</span>

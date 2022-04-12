@@ -3447,7 +3447,6 @@ box-shadow: 0px 9px 13px 0px $black-30;
 
 .icon2 path {
   fill: #a6adb1;
-  transition: fill 0.2s;
 }
 
 .active .icon2 path {
@@ -3496,4 +3495,12 @@ box-shadow: 0px 9px 13px 0px $black-30;
   .nav{
     display: none;
   }
+}
+.nav-btn:hover path {
+  fill:black;
+  transform: scale(1.1);
+}
+.active:hover path{
+    fill:#a6adb1;
+    transform: scale(1.1);
 }
