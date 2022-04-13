@@ -2530,7 +2530,7 @@ margin-right: 20px;
   width: 80%;
   font-style: normal;
   display : flex;
-  align-items : center;
+  align-items : flex-start;
   justify-content : center;
   flex-wrap : wrap;
   padding : 30px;  
@@ -3519,7 +3519,7 @@ box-shadow: 0px 9px 13px 0px $black-30;
 }
 .loading{
   position: relative;
-  top: 40px;
+  top:5.5%;
   font-style: normal;
   letter-spacing: 1.3px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
