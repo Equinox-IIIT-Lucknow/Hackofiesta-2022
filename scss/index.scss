@@ -616,7 +616,7 @@ body {
 
 .overall {
   overflow: hidden;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
@@ -1987,7 +1987,7 @@ $blue:blue;
   .accordion-item {
     border-bottom: 1px solid $lightgray;
     button[aria-expanded='true'] {
-      border-bottom: 1px solid $blue;
+      border-bottom: 1px solid $bg;
     }
   }
   button {
@@ -2004,7 +2004,7 @@ $blue:blue;
     outline: none;
     &:hover, &:focus {
       cursor: pointer;
-      color: $blue;
+      // color: $blue;
       &::after {
         cursor: pointer;
         // color: $blue;
@@ -2047,7 +2047,7 @@ $blue:blue;
     }
   }
   button[aria-expanded='true'] {
-    color: $blue;
+    // color: $blue;
     .icon-faq {
       &::after {
         width: 0;
@@ -3510,12 +3510,13 @@ box-shadow: 0px 9px 13px 0px $black-30;
   position: fixed;
   background: black url("/img/loader/animation_500_l1w71r0b.gif") no-repeat center center;
   z-index: 1000000;
-  background-size: 20%;
+  background-size: 300px;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  overflow:hidden !important;
 }
 .loading{
   position: relative;

@@ -629,7 +629,8 @@ document.getElementById('nav').addEventListener('click', function (e) {
 });
 
 var loader=document.getElementById("preloader");
-
+var loader1=document.getElementById("overall");
 setTimeout(()=>{
     loader.style.display="none";
+    loader1.style.display="flex";
 },10000);
