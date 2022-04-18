@@ -586,8 +586,11 @@ document.getElementById('nav--bar').addEventListener('click', function (e) {
   e.preventDefault();
   const target = e.target;
   if (target.classList.contains('link--a')) {
+    closeTrigger.click()
+    setTimeout(()=>{
       const id = target.getAttribute('href').slice(1);
       document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    },1000);
   }
 });
 
@@ -633,4 +636,4 @@ var loader1=document.getElementById("overall");
 setTimeout(()=>{
     loader.style.display="none";
     loader1.style.display="flex";
-},10000);
+},4000);
