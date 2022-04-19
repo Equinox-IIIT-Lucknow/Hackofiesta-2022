@@ -68,6 +68,12 @@ $('.btn-glitch')
     function facebook(){
         window.open("https://www.facebook.com/hackofiesta", "_blank")
     }
+    function theme_drive(){
+        window.open("https://drive.google.com/file/d/1M_tm_8cpsp05wcoqvHGzElzx26XkNj9X/view?usp=sharing", "_blank")
+    }
+    function judge_drive(){
+        window.open("https://drive.google.com/file/d/134cG26ouwzWYn-xHM-2ba9n17EyXk13m/view?usp=sharing", "_blank")
+    }
 
 const $a = elem => document.querySelector(elem);
 const countdown = function(_config) {
