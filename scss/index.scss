@@ -9,6 +9,7 @@ html{
   font-family: "Ostrich-Sans";
   src: url("../font/ostrich-sans.sans-bold.ttf");
 }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 body {
   overflow-x: hidden;
@@ -1293,7 +1294,7 @@ background-color:#c8c6c6e6;
     padding-left: 30px !important;
     padding-right: 30px !important;
     width: fit-content !important;
-    font-size: 18px !important;
+    font-size: 14px !important;
   }
 }
 .trophy{
@@ -2839,7 +2840,7 @@ $bp-lg: 800px;
 }
 
 .title-pr {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -3566,4 +3567,31 @@ box-shadow: 0px 9px 13px 0px $black-30;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0px;
+}
+.judging-read{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.theme-btn-1{
+  align-self: center;
+  width: 280px;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width:599px) {
+  .theme-btn-1{
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+}
+.title-pr span{
+  font-family: 'Raleway', sans-serif;
 }
