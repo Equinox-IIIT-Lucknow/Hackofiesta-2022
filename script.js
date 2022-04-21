@@ -631,3 +631,14 @@ function twitter(){
 function facebook(){
   window.open("https://www.facebook.com/hackofiesta", "_blank")
 }
+
+  var burger = document.querySelector('.burger-container'),
+      header = document.querySelector('.header');
+  
+  function burgerham() {
+      header.classList.toggle('menu-opened');
+  }
+
+  function menuit(){
+    header.classList.toggle('menu-opened');
+  }
