@@ -575,18 +575,6 @@ closeTrigger.on('click', function(){
             }
 });
 
-document.getElementById('nav--bar').addEventListener('click', function (e) {
-  e.preventDefault();
-  const target = e.target;
-  if (target.classList.contains('link--a')) {
-    closeTrigger.click()
-    setTimeout(()=>{
-      const id = target.getAttribute('href').slice(1);
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    },1000);
-  }
-});
-
 const nav = document.querySelector(".nav");
 const navActiveIndicator = document.querySelector(".nav__active-indicator");
 const buttons = document.querySelectorAll(".nav-btn");
@@ -629,7 +617,7 @@ var loader1=document.getElementById("overall");
 setTimeout(()=>{
     loader.style.display="none";
     loader1.style.display="flex";
-},4000);
+},1000);
 
 function linkedin(){
   window.open("https://www.linkedin.com/company/hackofiesta-iiitl", "_blank")
