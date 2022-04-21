@@ -3756,3 +3756,6 @@ $menuItems: 7;
     display: initial;
   }
 }
+.menu-opened{
+  z-index: 1000000;
+}
