@@ -55,18 +55,11 @@ $('.btn-glitch')
             btnGlitch.stop();
         }
     });
-
-    function linkedin(){
-        window.open("https://www.linkedin.com/company/hackofiesta-iiitl", "_blank")
+    function theme_drive(){
+        window.open("https://drive.google.com/file/d/1M_tm_8cpsp05wcoqvHGzElzx26XkNj9X/view?usp=sharing", "_blank")
     }
-    function instagram(){
-        window.open("https://www.instagram.com/hackofiesta", "_blank")
-    }
-    function twitter(){
-        window.open("https://twitter.com/hof_iiitl", "_blank")
-    }
-    function facebook(){
-        window.open("https://www.facebook.com/hackofiesta", "_blank")
+    function judge_drive(){
+        window.open("https://drive.google.com/file/d/134cG26ouwzWYn-xHM-2ba9n17EyXk13m/view?usp=sharing", "_blank")
     }
 
 const $a = elem => document.querySelector(elem);
@@ -582,18 +575,6 @@ closeTrigger.on('click', function(){
             }
 });
 
-document.getElementById('nav--bar').addEventListener('click', function (e) {
-  e.preventDefault();
-  const target = e.target;
-  if (target.classList.contains('link--a')) {
-    closeTrigger.click()
-    setTimeout(()=>{
-      const id = target.getAttribute('href').slice(1);
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    },1000);
-  }
-});
-
 const nav = document.querySelector(".nav");
 const navActiveIndicator = document.querySelector(".nav__active-indicator");
 const buttons = document.querySelectorAll(".nav-btn");
@@ -636,4 +617,28 @@ var loader1=document.getElementById("overall");
 setTimeout(()=>{
     loader.style.display="none";
     loader1.style.display="flex";
-},4000);
+},1000);
+
+function linkedin(){
+  window.open("https://www.linkedin.com/company/hackofiesta-iiitl", "_blank")
+}
+function instagram(){
+  window.open("https://www.instagram.com/hackofiesta", "_blank")
+}
+function twitter(){
+  window.open("https://twitter.com/hof_iiitl", "_blank")
+}
+function facebook(){
+  window.open("https://www.facebook.com/hackofiesta", "_blank")
+}
+
+  var burger = document.querySelector('.burger-container'),
+      header = document.querySelector('.header');
+  
+  function burgerham() {
+      header.classList.toggle('menu-opened');
+  }
+
+  function menuit(){
+    header.classList.toggle('menu-opened');
+  }
